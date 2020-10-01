@@ -28,3 +28,17 @@ This is the first phase of development of this project. In this page, exposing v
 * Flights will be listed down on search results page based on search criteria. By default search results will be sorted based on price, but user can sort based on other available sort fields also.
 * Available flights will be retrieved from various airlines via rest service. As a third party we may not be having latest details of flights.
 * User should be able to refine search criteria and see the results.
+
+# Development phase-2: Book a flight
+
+In this phase user should be able to book the flight. User can select any flight from searched results and make a booking without going to actual airline site. Important points regarding this phase are listed below.
+
+* User can continue booking as guest user and can book flight without login.
+* Since login functionality is not maintained so user will be asked to enter personal details like- name, email, mobile number etc. User personal details should be validated.
+* Flight booking with airline will be made via Rest call.
+* Payment section should be mocked. Since it is testing project so user can't develop actual payment functionality. User will be redirected to payment screen and will be asked to enter payment details. Post that payment logic will be mocked. But still entered payment details will be validated.
+
+### Challenges:
+
+* Suppose user searched the flights and post that took some time to make decision of booking. Meanwhile flight price got changed, since flights' prices keep changing. So before accepting payment, need to reconfirm final price.
+* Suppose there is only 2,3 seats available on a flight and user took some time to make decision. Meanwhile all seats got booked, so better to check available seat before making payment. Kindly note that here we are only checking number of available seats and not the preferred seat.
