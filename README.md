@@ -29,7 +29,7 @@ This is the first phase of development of this project. In this page, exposing v
 * Available flights will be retrieved from various airlines via rest service. As a third party we may not be having latest details of flights.
 * User should be able to refine search criteria and see the results.
 
-# Development phase-2: Book a flight
+# Development phase-2: book a flight
 
 In this phase user should be able to book the flight. User can select any flight from searched results and make a booking without going to actual airline site. Important points regarding this phase are listed below.
 
