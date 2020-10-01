@@ -17,3 +17,14 @@ Planning below phases for development.
 * Hibernate
 * Rest
 * MySQL
+
+
+# Development phase-1: search available flights
+
+This is the first phase of development of this project. In this page, exposing very simple functionality of searching flight. Below are important points regarding this phase development.
+
+* User need not to login to the portal but can continue as guest user.
+* Search page, where user can enter search criteria for flight.
+* Flights will be listed down on search results page based on search criteria. By default search results will be sorted based on price, but user can sort based on other available sort fields also.
+* Available flights will be retrieved from various airlines via rest service. As a third party we may not be having latest details of flights.
+* User should be able to refine search criteria and see the results.
