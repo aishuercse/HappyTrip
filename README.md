@@ -10,3 +10,10 @@ Planning below phases for development.
 4. Online web check-in portal. User can do web check-in online by selecting preferred seat and add-on services like meal.
 5. Extra functionalities related to flight booking, like cancelling the flight.
 6. Additional service of hotel booking via portal.
+
+# Technical stack
+
+* Spring
+* Hibernate
+* Rest
+* MySQL
