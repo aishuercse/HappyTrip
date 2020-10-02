@@ -67,3 +67,9 @@ In this phase we will try to implement web checkin using our portal. During web 
 
 ### Challenges
 * Suppose user selected one seat and took some time to finish web checkin. Meanwhile another user booked that seat, so before making final payment it is wise to recheck if selected seat is available and lock that seat then.
+
+# Development-phase 5: additional flight services
+
+* Along with flight booking and web checkin, additional flight related services can also be provided like- cancelling the flight.
+* If user cancel the flights then request will be sent to airline via rest service and before submit cancellation charges and eligible refund will be shown. If user confirm then cancel the flight.
+* Actual flight cancellation logic will be developed at airline side and portal will send request to airline via rest service.
