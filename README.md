@@ -52,3 +52,18 @@ Till phase-2 development we were only dealing with guest user. In this phase we 
 * If user book the flight after login then user's flight details should be shown under upcoming/completed flights section.
 * User can save payment details for faster transaction.
 * User should be able to save preferred search criteria, so that criteria can be used to pre fill the search criteria and user can then modify it if required.
+
+# Development phase-4: web checkin
+
+In this phase we will try to implement web checkin using our portal. During web checkin user can opt a seat and also opt for additional services like meal. Below are important points regarding this phase.
+
+* During web checkin user will be prompted to read guidelines and instructions and once user accepts conditions then only go to next step of web checkin.
+* User can select preferred seat. Already selected seats should be shown in grey. If any seat has price to be paid then show that once user hover over it.
+* Available seats and their prices will be fetched from airline via rest service.
+* Once seat is selected then in next step user will be asked to choose additional services if interested.
+* Additional services and their prices will be fetched from airline via rest service.
+* Final step is to finish web checkin after making payment for seat and additional services.
+* After web checkin, boarding pass should get generated and user can save or print the boarding pass.
+
+### Challenges
+* Suppose user selected one seat and took some time to finish web checkin. Meanwhile another user booked that seat, so before making final payment it is wise to recheck if selected seat is available and lock that seat then.
