@@ -12,6 +12,14 @@ Creating this repository for developing learning project. In this repository I t
 * Rest
 * MySQL
 
+## Flight booking service
+
+User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Here since it is learning project so we only need to develop rest service for airlines. Below are important points regarding airlines rest services.
+
+* Flight will be uniquely identified using flight number and date of operation. Because same flight usually operate daily.
+* User's flight booking info will be identified via PNR number. Booking detail will having PNR, flight info, customer info, payment details etc. Customer info like- personal details, seat number etc.
+* For each flight(flight number and date of operations), details like price, available seats etc. should be updated regularly. We can get updated details regularly and post it on portal.
+
 ## Development phases for flight booking service
 Planning below phases for development.
 
