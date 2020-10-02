@@ -42,3 +42,13 @@ In this phase user should be able to book the flight. User can select any flight
 
 * Suppose user searched the flights and post that took some time to make decision of booking. Meanwhile flight price got changed, since flights' prices keep changing. So before accepting payment, need to reconfirm final price.
 * Suppose there is only 2,3 seats available on a flight and user took some time to make decision. Meanwhile all seats got booked, so better to check available seat before making payment. Kindly note that here we are only checking number of available seats and not the preferred seat.
+
+# Development phase-3: user maintenance
+
+Till phase-2 development we were only dealing with guest user. In this phase we will try to implement user maintenance also.
+
+* User should be able to register and login to the portal.
+* User can save personal details.
+* If user book the flight after login then user's flight details should be shown under upcoming/completed flights section.
+* User can save payment details for faster transaction.
+* User should be able to save preferred search criteria, so that criteria can be used to pre fill the search criteria and user can then modify it if required.
