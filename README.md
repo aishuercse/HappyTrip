@@ -14,7 +14,7 @@ Creating this repository for developing learning project. In this repository I t
 
 ## Flight booking service
 
-User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Here since it is learning project so we only need to develop rest service for airlines. Below are important points regarding airlines rest services.
+User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Since this is the learning project so for multiple airlines, I am not going to maintain multiple services or databases. For all airlines only one web application and one DB will be maintained. All airlines can push their data in DB via that web portal. 
 
 * Flight will be uniquely identified using flight number and date of operation. Because same flight usually operate daily.
 * User's flight booking info will be identified via PNR number. Booking detail will having PNR, flight info, customer info, payment details etc. Customer info like- personal details, seat number etc.
@@ -36,7 +36,7 @@ This is the first phase of development of this project. In this page, exposing v
 * User need not to login to the portal but can continue as guest user.
 * Search page, where user can enter search criteria for flight.
 * Flights will be listed down on search results page based on search criteria. By default search results will be sorted based on price, but user can sort based on other available sort fields also.
-* Available flights will be retrieved from various airlines via rest service. As a third party we may not be having latest details of flights.
+* Available flights will be retrieved from airline DB via rest service. Since happy trip is third party portal so can't have access to airlines DB.
 * User should be able to refine search criteria and see the results.
 
 ### Development phase-2: book a flight
@@ -46,7 +46,7 @@ In this phase user should be able to book the flight. User can select any flight
 * User can continue booking as guest user and can book flight without login.
 * Since login functionality is not maintained so user will be asked to enter personal details like- name, email, mobile number etc. User personal details should be validated.
 * Flight booking with airline will be made via Rest call.
-* Payment section should be mocked. Since it is testing project so user can't develop actual payment functionality. User will be redirected to payment screen and will be asked to enter payment details. Post that payment logic will be mocked. But still entered payment details will be validated.
+* Payment section should be mocked. Since it is learning project so we can't develop actual payment functionality. User will be redirected to payment screen and will be asked to enter payment details. Post that payment logic will be mocked. But still entered payment details will be validated.
 
 #### Challenges:
 
