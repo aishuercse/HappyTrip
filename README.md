@@ -3,6 +3,7 @@ Creating this repository for developing learning project. In this repository I t
 
 ## Business functionalities
 
+* Airline service
 * Flight booking service
 
 ## Technical stack
@@ -12,13 +13,17 @@ Creating this repository for developing learning project. In this repository I t
 * Rest
 * MySQL
 
-## Flight booking service
+## Airline service
 
-User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Since this is the learning project so for multiple airlines, I am not going to maintain multiple services or databases. For all airlines only one web application and one DB will be maintained. All airlines can push their data in DB via that web portal. 
+In real time scenario, each airline is an independent service and each airline has its own portal and database. But since it is a learning project so I am not going to create independent service for each  airline. Instead of that I am going to create one web application using one database for all the airlines. Below are few important points regarding airline service. 
 
 * Flight will be uniquely identified using flight number and date of operation. Because same flight usually operate daily.
-* User's flight booking info will be identified via PNR number. Booking detail will having PNR, flight info, customer info, payment details etc. Customer info like- personal details, seat number etc.
-* For each flight(flight number and date of operations), details like price, available seats etc. should be updated regularly. We can get updated details regularly and post it on portal.
+* User's flight booking info will be identified via PNR number. Booking detail will be having PNR, flight info, customer info, payment details etc.
+* For each flight(flight number and date of operations), details like price, available seats etc. would be updated regularly. We can get updated details regularly and post it on portal.
+
+## Flight booking service
+
+User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service.
 
 ## Development phases for flight booking service
 Planning below phases for development.
