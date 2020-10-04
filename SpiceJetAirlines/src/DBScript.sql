@@ -1,1 +1,0 @@
-create database spice_jet;
