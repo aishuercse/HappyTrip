@@ -3,10 +3,14 @@ package com.amit.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+/**
+ * @author amit
+ * Entity class to maintain airport detail. Since we are only dealing with flight booking,
+ * so location without airport is of no use for us. Hence clubbing location details also
+ * inside airport table.
+ */
 @Entity
 @Table(name="airport_detail")
 public class AirportDetail {
@@ -16,12 +20,10 @@ public class AirportDetail {
 	private String airportCode;
 	@Column(name="airport_name")
 	private String airportName;
-	/*
-	 * Unidirectional mapping to location because location may or may not have airport.
-	 */
-	@OneToOne
-	@JoinColumn(name="location_code")
-	private Location location;
+	@Column(name="location_name")
+	private String locationName;
+	@Column(name="country_name")
+	private String countryName;
 	/**
 	 * @return the airportCode
 	 */
@@ -47,15 +49,27 @@ public class AirportDetail {
 		this.airportName = airportName;
 	}
 	/**
-	 * @return the location
+	 * @return the locationName
 	 */
-	public Location getLocation() {
-		return location;
+	public String getLocationName() {
+		return locationName;
 	}
 	/**
-	 * @param location the location to set
+	 * @param locationName the locationName to set
 	 */
-	public void setLocation(Location location) {
-		this.location = location;
+	public void setLocationName(String locationName) {
+		this.locationName = locationName;
+	}
+	/**
+	 * @return the countryName
+	 */
+	public String getCountryName() {
+		return countryName;
+	}
+	/**
+	 * @param countryName the countryName to set
+	 */
+	public void setCountryName(String countryName) {
+		this.countryName = countryName;
 	}
 }
