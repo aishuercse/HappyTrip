@@ -53,6 +53,7 @@ In this phase user should be able to book the flight. User can select any flight
 * Since login functionality is not maintained so user will be asked to enter personal details like- name, email, mobile number etc. User personal details should be validated.
 * Flight booking with airline will be made via Rest call.
 * Payment section should be mocked. Since it is learning project so we can't develop actual payment functionality. User will be redirected to payment screen and will be asked to enter payment details. Post that payment logic will be mocked. But still entered payment details will be validated.
+* Airlines need to store details of payment also as well as personal details. Because if user cancel the flights then refund needs to be processed to same payment source.
 
 #### Challenges:
 
