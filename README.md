@@ -20,6 +20,7 @@ In real time scenario, each airline is an independent service and each airline h
 * Flight will be uniquely identified using flight number and date of operation. Because same flight usually operate daily.
 * User's flight booking info will be identified via PNR number. Booking detail will be having PNR, flight info, customer info, payment details etc.
 * For each flight(flight number and date of operations), details like price, available seats etc. would be updated regularly. We can get updated details regularly and post it on portal.
+* Each flight will have seats assigned for travel types like- economy class, business class.
 
 ## Flight booking service
 
