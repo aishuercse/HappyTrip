@@ -7,6 +7,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -35,6 +36,9 @@ public class FlightDetail {
 	private Date arrivalDateAndTime;
 	@OneToMany(mappedBy = "flightDetail", cascade = CascadeType.ALL)
 	List<TravelClass> travelClassses;
+	@ManyToOne(optional = false)
+    @JoinColumn(name = "airline_id")
+	private AirlineDetail airlineDetail;
 	/**
 	 * @return the flightNumber
 	 */
@@ -118,5 +122,17 @@ public class FlightDetail {
 	 */
 	public void setTravelClassses(List<TravelClass> travelClassses) {
 		this.travelClassses = travelClassses;
+	}
+	/**
+	 * @return the airlineDetail
+	 */
+	public AirlineDetail getAirlineDetail() {
+		return airlineDetail;
+	}
+	/**
+	 * @param airlineDetail the airlineDetail to set
+	 */
+	public void setAirlineDetail(AirlineDetail airlineDetail) {
+		this.airlineDetail = airlineDetail;
 	}
 }
