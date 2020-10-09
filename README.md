@@ -20,10 +20,11 @@ In real time scenario, each airline is an independent service and each airline h
 * Flight will be uniquely identified using flight number and date of operation. Because same flight usually operate daily.
 * User's flight booking info will be identified via PNR number. Booking detail will be having PNR, flight info, customer info, payment details etc.
 * For each flight(flight number and date of operations), details like price, available seats etc. would be updated regularly. We can get updated details regularly and post it on portal.
+* Each flight will have seats assigned for travel types like- economy class, business class.
 
 ## Flight booking service
 
-User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service.
+User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Portal will act as landing point for flight booking as it will be having details of multiple flights from multiple airlines.
 
 ## Development phases for flight booking service
 Planning below phases for development.
@@ -52,6 +53,7 @@ In this phase user should be able to book the flight. User can select any flight
 * Since login functionality is not maintained so user will be asked to enter personal details like- name, email, mobile number etc. User personal details should be validated.
 * Flight booking with airline will be made via Rest call.
 * Payment section should be mocked. Since it is learning project so we can't develop actual payment functionality. User will be redirected to payment screen and will be asked to enter payment details. Post that payment logic will be mocked. But still entered payment details will be validated.
+* Airlines need to store details of payment also as well as personal details. Because if user cancel the flights then refund needs to be processed to same payment source.
 
 #### Challenges:
 
