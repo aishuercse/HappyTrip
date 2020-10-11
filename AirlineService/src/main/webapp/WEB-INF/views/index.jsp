@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Airline service</title>
+<title>Application page</title>
 </head>
 <body>
-<h1>Airline service home page</h1>
+<h1>Welcome to Airline Service </h1><br>
+<a href="/AirlineService">Go to main page</a>
 </body>
 </html>
