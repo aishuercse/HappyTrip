@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Airline Service</title>
+<title>Airline service</title>
 </head>
 <body>
-<h1>Airline Service</h1>
+<h1>Welcome to airline service portal</h1>
 </body>
 </html>
