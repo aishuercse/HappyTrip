@@ -1,4 +1,4 @@
-package main.java.controller;
+package com.amit.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class HomeController {
-
+	
 	@RequestMapping("/")
-	public String indexPage()
+	public String loadApp()
 	{
 		return "index";
 	}
