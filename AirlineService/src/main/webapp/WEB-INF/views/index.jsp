@@ -7,7 +7,10 @@
 <title>Airline Service</title>
 </head>
 <body>
+<div>
+<img src="/images/portal_header_image.jpg">
 <h1>Go to airline service</h1>
 <a href="/AirlineService">Airline Service</a>
+</div>
 </body>
 </html>
