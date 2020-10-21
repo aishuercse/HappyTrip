@@ -24,7 +24,7 @@ In real time scenario, each airline is an independent service and each airline h
 
 ## Flight booking service
 
-User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Portal will act as landing point for flight booking as it will be having details of multiple flights from multiple airlines.
+User should be able to search and book the flight. But since the portal is third party service so flight related information will be fetched from airlines via rest service. Portal will act as landing point for flight booking as it will be having details of multiple flights from multiple airlines. Also flight bookng request will be confirmed by airline service.
 
 ## Development phases for flight booking service
 Planning below phases for development.
